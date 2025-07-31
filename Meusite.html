@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portugal Chatbots - Soluções Inteligentes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #007bff;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 3rem;
+      text-align: center;
+      background: linear-gradient(to right, #0056b3, #00aaff);
+      color: white;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .btn {
+      background: #ffc107;
+      color: #333;
+      padding: 1rem 2rem;
+      margin: 1rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .pricing {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 2rem;
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+    }
+    .card h3 {
+      color: #007bff;
+    }
+    .card p {
+      margin: 10px 0;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .contact {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .contact a {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Portugal Chatbots</h1>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#video">Como Funciona</a>
+      <a href="#planos">Planos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Automatize Seu Atendimento com Chatbots Inteligentes</h1>
+    <p>Venda, atenda e encante seus clientes 24 horas por dia com tecnologia de ponta.</p>
+    <button class="btn" onclick="document.getElementById('planos').scrollIntoView({behavior: 'smooth'});">Ver Planos</button>
+  </section>
+
+  <section id="servicos" class="section">
+    <h2 style="text-align: center; color: #007bff;">O Que Oferecemos</h2>
+    <ul>
+      <li>Integração com WhatsApp Business</li>
+      <li>Automatização de perguntas frequentes</li>
+      <li>Respostas inteligentes e personalizadas</li>
+      <li>Dashboard para gestão de atendimentos</li>
+    </ul>
+  </section>
+
+  <section id="video" class="section">
+    <h2 style="text-align: center; color: #007bff;">Veja o Chatbot em Ação</h2>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="planos" class="section">
+    <h2 style="text-align: center; color: #007bff;">Nossos Planos</h2>
+    <div class="pricing">
+      <div class="card">
+        <h3>Plano Início</h3>
+        <p><strong>30€ / mês</strong></p>
+        <p>Respostas automáticas básicas</p>
+        <p>Integração com WhatsApp</p>
+        <p>Suporte por e-mail</p>
+        <button class="btn" onclick="alert('Solicitação enviada para o Plano Início')">Escolher</button>
+      </div>
+      <div class="card">
+        <h3>Plano Profissional</h3>
+        <p><strong>60€ / mês</strong></p>
+        <p>Todos os recursos do Início</p>
+        <p>Integração com CRM</p>
+        <p>Dashboard de relatórios</p>
+        <p>Suporte por WhatsApp</p>
+        <button class="btn" onclick="alert('Solicitação enviada para o Plano Profissional')">Escolher</button>
+      </div>
+      <div class="card">
+        <h3>Plano Premium</h3>
+        <p><strong>100€ / mês</strong></p>
+        <p>Todos os recursos do Profissional</p>
+        <p>Chatbot com IA treinada para seu nicho</p>
+        <p>Consultoria e treinamento</p>
+        <p>Suporte prioritário 24/7</p>
+        <button class="btn" onclick="alert('Solicitação enviada para o Plano Premium')">Escolher</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="section contact">
+    <h2 style="color: #007bff;">Fale Conosco</h2>
+    <p>Email: <a href="mailto:portugalchatbots@gmail.com">portugalchatbots@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/351926769599" target="_blank">+351 926 769 599</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Portugal Chatbots. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
